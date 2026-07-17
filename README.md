@@ -18,7 +18,7 @@ For every movie, a **tag** is created by combining the following attributes:
 * 👥 Cast
 * 📝 Overview
 
-The generated tags are preprocessed and converted into numerical vectors using a text vectorization technique, **Count Vectorizer**.
+The generated tags are preprocessed and converted into numerical vectors using **Bag of Words** vectorization technique.
 
 When a user searches for a movie or enters a text query:
 
