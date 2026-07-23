@@ -6,7 +6,7 @@ from fastapi import FastAPI, HTTPException
 from fastapi.middleware.cors import CORSMiddleware
 from pydantic import BaseModel
 
-API_KEY = "20f159696c931d74c72562494cb309e1"
+API_KEY = "YOUR API KEY"
 movies = pd.read_csv("Dataset/movies.csv")
 cv = pickle.load(open("cv.pkl", "rb"))
 vectors = pickle.load(open("vectors.pkl", "rb"))
