@@ -29,7 +29,7 @@ When a user searches for a movie or enters a text query:
 ## 🛠️ Recommendation Pipeline
 
 ```text
-TMDB Dataset
+   Dataset
       │
       ▼
 Extract Features
