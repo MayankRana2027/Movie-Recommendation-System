@@ -1,4 +1,5 @@
-# Movie Recommendation System
+# CineMatch
+CineMatch is **movie recommendation system** that recommends movies by processing user text query.
 
 ## 📌 Dataset
 
@@ -6,8 +7,6 @@
 https://www.kaggle.com/datasets/tmdb/tmdb-movie-metadata
 
 ## 🚀 How It Works
-
-This project recommends movies by comparing the user's input with information extracted from the dataset.
 
 For every movie, a **tag** is created by combining the following attributes:
 
