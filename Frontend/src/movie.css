@@ -1,0 +1,251 @@
+.movie-details {
+    width: 100%;
+    max-width: none;
+    margin: 0;
+    padding: 0;
+    color: #e6edf3;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.details-content {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 45px;
+    background: none;
+    border: none;
+    border-radius: 0;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    min-height: 100vh;
+}
+
+.details-content img {
+    height: 100vh;
+    width: auto;
+    max-width: none;
+    object-fit: contain;
+    display: block;
+    margin: 0;
+    border: none;
+    border-radius: 0;
+    background: none;
+}
+
+.details-info {
+    padding: 40px 30px 40px 0;
+    display: flex;
+    flex-direction: column;
+    position: relative;   /* anchor for the button */
+}
+
+.details-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 6px;
+    padding-right: 110px;  /* keep title from running under the button */
+}
+
+.details-header h1 {
+    margin-bottom: 0;
+}
+
+.details-subline {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 20px;
+    font-size: 1rem;
+    font-weight: 600;
+    color: #8b949e;
+    flex-wrap: wrap;
+}
+
+.details-subline .genres {
+    color: #c9d1d9;
+}
+
+.details-subline .runtime {
+    color: #8b949e;
+}
+
+.details-subline .dot {
+    color: #58a6ff;
+    font-weight: 900;
+}
+
+/* Small phones — keep it centered like the header */
+@media (max-width: 768px) {
+    .details-subline {
+        justify-content: center;
+    }
+}
+
+.back-btn {
+    background: transparent;
+    border: 2px solid #1e2734;
+    color: #8b949e;
+    padding: 10px 22px;
+    border-radius: 10px;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s ease;
+    white-space: nowrap;
+    position: absolute;
+    top: 0;
+    right: 15px;
+}
+
+.back-btn:hover {
+    border-color: #1f6feb;
+    color: #58a6ff;
+    box-shadow: 0 0 12px rgba(31, 111, 235, 0.3);
+    transform: translateX(-3px);
+}
+
+.details-info h1 {
+    font-size: 2.4rem;
+    font-weight: 800;
+    background: linear-gradient(135deg, #58a6ff 0%, #79c0ff 50%, #58a6ff 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    letter-spacing: -0.5px;
+    line-height: 1.15;
+}
+
+.details-info p {
+    font-size: 1rem;
+    line-height: 1.7;
+    color: #c9d1d9;
+    margin-bottom: 14px;
+}
+
+.details-info p strong {
+    color: #58a6ff;
+    font-weight: 700;
+    margin-right: 6px;
+}
+
+.score-badge {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 8px 18px;
+    background: linear-gradient(135deg, #1f6feb, #388bfd);
+    border-radius: 30px;
+    font-weight: bold;
+    font-size: 0.95rem;
+    color: white;
+}
+
+/* Tablets and small laptops */
+@media (max-width: 1024px) {
+    .details-content {
+        grid-template-columns: auto 1fr;
+        gap: 30px;
+    }
+
+    .details-content img {
+        height: 100vh;
+        width: auto;
+    }
+
+    .details-info h1 {
+        font-size: 2rem;
+    }
+}
+
+/* Tablets (portrait) and large phones — stack image on top */
+@media (max-width: 768px) {
+    .details-content {
+        grid-template-columns: 1fr;
+        gap: 25px;
+        min-height: auto;
+    }
+
+    .details-content img {
+        height: 420px;
+        width: auto;
+        max-width: 100%;
+        margin: 0 auto;
+    }
+
+    .details-info {
+        padding: 20px;
+    }
+
+    .details-header {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 12px;
+    }
+
+    .details-info h1 {
+        font-size: 1.8rem;
+        text-align: center;
+    }
+
+    .details-info p {
+        font-size: 0.95rem;
+    }
+
+    .score-badge {
+        display: block;
+        text-align: center;
+        width: fit-content;
+        margin: 10px auto 0;
+    }
+}
+
+/* Small phones */
+@media (max-width: 480px) {
+    .back-btn {
+        padding: 8px 16px;
+        font-size: 14px;
+    }
+
+    .details-content {
+        gap: 18px;
+    }
+
+    .details-content img {
+        height: 340px;
+        width: auto;
+        max-width: 100%;
+    }
+
+    .details-info {
+        padding: 14px;
+    }
+
+    .details-info h1 {
+        font-size: 1.5rem;
+    }
+
+    .details-info p {
+        font-size: 0.9rem;
+        line-height: 1.5;
+        margin-bottom: 10px;
+    }
+
+    .score-badge {
+        font-size: 0.85rem;
+        padding: 6px 14px;
+    }
+}
+
+/* Very small phones */
+@media (max-width: 360px) {
+    .details-info h1 {
+        font-size: 1.3rem;
+    }
+
+    .details-content img {
+        height: 280px;
+        width: auto;
+        max-width: 100%;
+    }
+}
+
